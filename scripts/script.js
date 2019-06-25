@@ -36,6 +36,7 @@ function toggleHeader(){
 $menu.addEventListener('click', toggleMenu, false);
 let isOpen = false;
 function toggleMenu() {
+
     if (isOpen === false){
         $navBar.classList.add('menu-opened');   
         isOpen = true;     
@@ -43,6 +44,15 @@ function toggleMenu() {
         $navBar.classList.remove('menu-opened');
         isOpen = false;
     }
+
 }
 
+$navBar.addEventListener('click', navClick, false)
 
+function navClick(evt) {
+
+    if (evt.target.tagName == 'A'){
+        toggleMenu();
+    }
+
+}
