@@ -42,14 +42,16 @@ header {
 .logo {
     grid-area: lgo;    
 }
-.logo img {
+.logo svg {
     transition: all 0.4s ease-out;
 }
-.max-logo img {
+.max-logo svg {
     width: 320px;
+    fill: #c5eff7;
 }
-.min-logo img {
+.min-logo svg {
     width: 280px;
+    fill: #2574a9;
 }
 .nav-bar {
     display: grid;
@@ -90,7 +92,7 @@ header {
 }
 .min-nav {
     font-size: 0.875em;
-    color: #2574a9;
+    color: #2574a9 !important;
 }
 .ghost {
     width: 100%;
@@ -114,11 +116,11 @@ header {
             "lgo ... mnu";
     }
 
-    .max-logo img {
+    .max-logo svg {
         width: 220px;
     }
 
-    .min-logo img {
+    .min-logo svg {
         width: 180px;
     }   
     
@@ -154,12 +156,12 @@ header {
     }   
 
     .max-hamburger, .max-hamburger::before, .max-hamburger::after {
-        transition: all 0.4s ease-out;
+        transition: all 0.3s ease-out;
         background-color: #c5eff7;
     }
 
     .min-hamburger, .min-hamburger::before, .min-hamburger::after {
-        transition: all 0.4s ease-out;
+        transition: all 0.3s ease-out;
         background-color: #2574a9;
     }
 
@@ -179,7 +181,7 @@ header {
         width: 100%;
         background: #2980b9;
         transform: translateX(-100%);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     .menu-opened {
